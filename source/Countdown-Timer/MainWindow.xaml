@@ -2,6 +2,7 @@
         xmlns                ="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x              ="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm             ="clr-namespace:Countdown_Timer.ViewModels"
+        xmlns:local          ="clr-namespace:Countdown_Timer"
         WindowStyle          ="None"
         ResizeMode           ="NoResize"
         WindowStartupLocation="CenterScreen"
@@ -48,7 +49,11 @@
         <KeyBinding Key="F7"  Command="{Binding StopCommand}" />
     </Window.InputBindings>
 
-    <DockPanel>
-        <TextBlock Text="{Binding Seconds}" FontSize="{Binding FontSize}" />
-    </DockPanel>
+    <Grid>
+        <TextBlock Text="{x:Static local:Strings.StartInfo}" FontSize="24" />
+
+        <DockPanel>
+            <TextBlock Text="{Binding Seconds}" FontSize="{Binding FontSize}" />
+        </DockPanel>
+    </Grid>
 </Window>

@@ -4,10 +4,6 @@ using System.Windows.Input;
 using Countdown_Timer.Contracts;
 using Countdown_Timer.Services;
 
-#if !DEBUG
-using System.Windows;
-#endif
-
 namespace Countdown_Timer.ViewModels
 {
     public enum State
@@ -37,9 +33,6 @@ namespace Countdown_Timer.ViewModels
 
             _timer  = timer  ?? throw new ArgumentNullException(nameof(timer));
             _beeper = beeper ?? throw new ArgumentNullException(nameof(beeper));
-#if !DEBUG
-            MessageBox.Show(Strings.StartInfo, "Countdown-Timer", MessageBoxButton.OK, MessageBoxImage.Information);
-#endif
         }
         //---------------------------------------------------------------------
         private State _state;
