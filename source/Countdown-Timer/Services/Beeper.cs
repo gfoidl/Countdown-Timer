@@ -6,12 +6,14 @@ namespace Countdown_Timer.Services
 {
     public class Beeper : IBeeper
     {
+        private readonly int _startSeconds;
         private readonly int _secondsToStartBeeping;
         //---------------------------------------------------------------------
         public Beeper(IConfiguration config)
         {
             if (config == null) throw new ArgumentNullException(nameof(config));
 
+            _startSeconds          = config.StartSeconds;
             _secondsToStartBeeping = config.StartBeeping;
         }
         //---------------------------------------------------------------------
@@ -19,12 +21,11 @@ namespace Countdown_Timer.Services
         {
             if (seconds == 0)
                 this.FinalBeepAsync();
-            else if (seconds % 10 == 0)
+            else if (seconds % 10 == 0 && seconds != _startSeconds)
                 this.ShortBeepAsync();
-            else if (seconds <= _secondsToStartBeeping)
+            else if ((uint)seconds <= (uint)_secondsToStartBeeping)
                 this.ShortBeepAsync();
         }
-
         //---------------------------------------------------------------------
 #pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
         private async void ShortBeepAsync() => await Task.Run(() => Console.Beep(1250, 250));
