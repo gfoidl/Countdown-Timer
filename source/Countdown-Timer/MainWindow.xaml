@@ -18,23 +18,12 @@
             <Setter Property="VerticalAlignment"   Value="Center" />
         </Style>
 
-        <Style x:Key="CopyRightTextBlock" TargetType="TextBlock">
-            <Setter Property="HorizontalAlignment" Value="Right" />
-            <Setter Property="VerticalAlignment"   Value="Bottom" />
-            <Setter Property="Margin"              Value="10" />
-        </Style>
-
-        <SolidColorBrush x:Key="Grey"   Color="#FFD5D5D5" />
-        <SolidColorBrush x:Key="Red"    Color="#FFEE4747" />
-        <SolidColorBrush x:Key="Yellow" Color="#FFFFE802" />
-        <SolidColorBrush x:Key="Green"  Color="#FF2AED2A" />
-
         <Style TargetType="DockPanel">
             <Style.Triggers>
                 <DataTrigger Binding="{Binding State}" Value="Stopped">
                     <Setter Property="Visibility" Value="Collapsed" />
                 </DataTrigger>
-                
+
                 <DataTrigger Binding="{Binding State}" Value="Red">
                     <Setter Property="Background" Value="{StaticResource Red}" />
                 </DataTrigger>

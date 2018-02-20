@@ -4,5 +4,19 @@
              StartupUri="MainWindow.xaml">
 
     <Application.Resources>
+        <Style x:Key="CopyRightTextBlock" TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="VerticalAlignment"   Value="Bottom" />
+            <Setter Property="Margin"              Value="10" />
+        </Style>
+
+        <SolidColorBrush x:Key="Red"    Color="#FFEE4747" />
+        <SolidColorBrush x:Key="Yellow" Color="#FFFFE802" />
+        <SolidColorBrush x:Key="Green"  Color="#FF2AED2A" />
+
+        <LinearGradientBrush x:Key="Grey" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FFC8C8C8"/>
+            <GradientStop Color="#FF5A5A5A" Offset="1"/>
+        </LinearGradientBrush>
     </Application.Resources>
 </Application>
