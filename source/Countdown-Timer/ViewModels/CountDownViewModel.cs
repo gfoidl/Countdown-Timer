@@ -1,19 +1,12 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Windows.Input;
-using Countdown_Timer.Contracts;
+using Countdown_Timer.Abstractions;
+using Countdown_Timer.Models;
 using Countdown_Timer.Services;
 
 namespace Countdown_Timer.ViewModels
 {
-    public enum State
-    {
-        Stopped,
-        Red,
-        Yellow,
-        Green
-    }
-    //-------------------------------------------------------------------------
     public sealed class CountDownViewModel : INotifyPropertyChanged
     {
         private readonly ITimer  _timer;
@@ -21,7 +14,7 @@ namespace Countdown_Timer.ViewModels
         private readonly int     _startSeconds;
         private readonly int     _secondsForYellow;
         //---------------------------------------------------------------------
-        public CountDownViewModel() : this(new DispatcherTimerWrapper(), Properties.Settings.Default, new Beeper(Properties.Settings.Default)) { }
+        public CountDownViewModel() : this(new DispatcherTimerWrapper(), Configuration.Default, new Beeper(Configuration.Default)) { }
         //---------------------------------------------------------------------
         public CountDownViewModel(ITimer timer, IConfiguration config, IBeeper beeper)
         {

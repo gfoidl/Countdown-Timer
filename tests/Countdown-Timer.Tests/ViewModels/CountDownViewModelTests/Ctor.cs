@@ -1,4 +1,5 @@
-﻿using Countdown_Timer.Contracts;
+﻿using Countdown_Timer.Abstractions;
+using Countdown_Timer.Models;
 using Countdown_Timer.ViewModels;
 using Moq;
 using NUnit.Framework;

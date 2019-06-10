@@ -1,5 +1,5 @@
 ﻿using System;
-using Countdown_Timer.Contracts;
+using Countdown_Timer.Abstractions;
 
 namespace Countdown_Timer.Tests
 {

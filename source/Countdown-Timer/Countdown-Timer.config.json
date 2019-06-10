@@ -1,0 +1,8 @@
+﻿{
+    "Settings": {
+        "StartSeconds": 30,
+        "SecondsForYellow": 5,
+        "StartBeeping": 5,
+        "FontSize": 640
+    }
+}

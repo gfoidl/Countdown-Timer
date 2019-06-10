@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Threading;
-using Countdown_Timer.Contracts;
+using Countdown_Timer.Abstractions;
 
 namespace Countdown_Timer.Services
 {

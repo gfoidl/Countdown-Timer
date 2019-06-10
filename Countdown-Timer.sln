@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2024
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9770AA4E-487D-49D0-907F-50B33A1BDF29}"
 	ProjectSection(SolutionItems) = preProject
@@ -13,11 +13,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{5B441661-6607-4C00-877A-3DFC7AB55003}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Countdown-Timer", "source\Countdown-Timer\Countdown-Timer.csproj", "{789FBB4E-861C-4654-B284-029C39D0C4A9}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{564F1814-CCD7-414A-8AF1-62BF695013BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Countdown-Timer.Tests", "tests\Countdown-Timer.Tests\Countdown-Timer.Tests.csproj", "{3E298A05-3E3B-40FC-B30E-EEDE2ABEA6E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Countdown-Timer", "source\Countdown-Timer\Countdown-Timer.csproj", "{2D530DDD-FCCC-48C0-8E27-D40AA8B21F4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Countdown-Timer.Tests", "tests\Countdown-Timer.Tests\Countdown-Timer.Tests.csproj", "{B04201F7-AFB6-4AC0-B212-67B6BB109579}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{5FE89634-23E1-4813-AAAF-738DA406949E}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,21 +30,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{789FBB4E-861C-4654-B284-029C39D0C4A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{789FBB4E-861C-4654-B284-029C39D0C4A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{789FBB4E-861C-4654-B284-029C39D0C4A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{789FBB4E-861C-4654-B284-029C39D0C4A9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3E298A05-3E3B-40FC-B30E-EEDE2ABEA6E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3E298A05-3E3B-40FC-B30E-EEDE2ABEA6E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3E298A05-3E3B-40FC-B30E-EEDE2ABEA6E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3E298A05-3E3B-40FC-B30E-EEDE2ABEA6E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D530DDD-FCCC-48C0-8E27-D40AA8B21F4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D530DDD-FCCC-48C0-8E27-D40AA8B21F4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D530DDD-FCCC-48C0-8E27-D40AA8B21F4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D530DDD-FCCC-48C0-8E27-D40AA8B21F4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B04201F7-AFB6-4AC0-B212-67B6BB109579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B04201F7-AFB6-4AC0-B212-67B6BB109579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B04201F7-AFB6-4AC0-B212-67B6BB109579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B04201F7-AFB6-4AC0-B212-67B6BB109579}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{789FBB4E-861C-4654-B284-029C39D0C4A9} = {5B441661-6607-4C00-877A-3DFC7AB55003}
-		{3E298A05-3E3B-40FC-B30E-EEDE2ABEA6E8} = {564F1814-CCD7-414A-8AF1-62BF695013BE}
+		{2D530DDD-FCCC-48C0-8E27-D40AA8B21F4B} = {5B441661-6607-4C00-877A-3DFC7AB55003}
+		{B04201F7-AFB6-4AC0-B212-67B6BB109579} = {564F1814-CCD7-414A-8AF1-62BF695013BE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F4B7099E-9488-4226-A187-1ABD5BC1858A}

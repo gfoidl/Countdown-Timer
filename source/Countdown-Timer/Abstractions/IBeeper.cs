@@ -1,4 +1,4 @@
-﻿namespace Countdown_Timer.Contracts
+﻿namespace Countdown_Timer.Abstractions
 {
     public interface IBeeper
     {

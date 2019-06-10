@@ -1,4 +1,4 @@
-﻿<Window x:Class              ="Countdown_Timer.MainWindow"
+﻿<Window x:Class               ="Countdown_Timer.MainWindow"
         xmlns                ="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x              ="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm             ="clr-namespace:Countdown_Timer.ViewModels"
@@ -52,6 +52,6 @@
             <TextBlock Text="{Binding Seconds}" FontSize="{Binding FontSize}" />
         </DockPanel>
 
-        <TextBlock Text="© gfoidl, 2018" Style="{StaticResource CopyRightTextBlock}" />
+        <TextBlock Text="© gfoidl, 2018-2019" Style="{StaticResource CopyRightTextBlock}" />
     </Grid>
 </Window>
